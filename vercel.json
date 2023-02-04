@@ -1,0 +1,20 @@
+{
+  "cleanUrls": true,
+  "github": {
+    "autoJobCancelation": true
+  },
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/api/handler",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/:slug",
+      "destination": "/api/handler"
+    }
+  ],
+  "trailingSlash": false
+}

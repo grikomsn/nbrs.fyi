@@ -1,0 +1,9 @@
+.DS_Store
+.env*
+.vercel/
+*.log
+**/*.tsbuildinfo
+**/node_modules/
+
+!.env.example
+!.gitkeep
