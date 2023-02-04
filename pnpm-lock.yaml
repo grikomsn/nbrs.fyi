@@ -5,6 +5,7 @@ specifiers:
   '@types/node': ^18.11.18
   '@vercel/edge-config': ^0.1.1
   '@vercel/node': ^2.9.0
+  edge-fyi: ^0.0.2
   eslint: ^8.33.0
   husky: ^8.0.3
   lint-staged: ^13.1.0
@@ -15,6 +16,7 @@ specifiers:
 dependencies:
   '@vercel/edge-config': 0.1.1
   '@vercel/node': 2.9.0
+  edge-fyi: 0.0.2_hodsoaml5wqtwogj6epnckpzhe
   typescript: 4.9.5
 
 devDependencies:
@@ -1036,6 +1038,16 @@ packages:
   /eastasianwidth/0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
     dev: true
+
+  /edge-fyi/0.0.2_hodsoaml5wqtwogj6epnckpzhe:
+    resolution: {integrity: sha512-mE5hjxKGV/TXO9fVb701d3mOFK60JVox/tIOQg5FrhmbMneQcK98gn0TURRV4rc+AxJ4MdO0yCxF6YtsoRA9Cw==}
+    peerDependencies:
+      '@vercel/edge-config': '>=0'
+      '@vercel/node': '>=2'
+    dependencies:
+      '@vercel/edge-config': 0.1.1
+      '@vercel/node': 2.9.0
+    dev: false
 
   /edge-runtime/2.0.0:
     resolution: {integrity: sha512-TmRJhKi4mlM1e+zgF4CSzVU5gJ1sWj7ia+XhVgZ8PYyYUxk4PPjJU8qScpSLsAbdSxoBghLxdMuwuCzdYLd1sQ==}

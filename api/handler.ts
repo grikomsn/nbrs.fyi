@@ -1,4 +1,4 @@
-import { fyi } from "./_lib/fyi";
+import { fyi } from "edge-fyi";
 
 export default fyi({
   host: process.env.HOST,
