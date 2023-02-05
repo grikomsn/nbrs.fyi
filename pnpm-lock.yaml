@@ -2,10 +2,10 @@ lockfileVersion: 5.4
 
 specifiers:
   '@grikomsn/style-guide-core': ^1.0.0
-  '@types/node': ^18.11.18
+  '@types/node': ^18.11.19
   '@vercel/edge-config': ^0.1.1
   '@vercel/node': ^2.9.0
-  edge-fyi: ^0.0.2
+  edge-fyi: ^0.0.3
   eslint: ^8.33.0
   husky: ^8.0.3
   lint-staged: ^13.1.0
@@ -16,12 +16,12 @@ specifiers:
 dependencies:
   '@vercel/edge-config': 0.1.1
   '@vercel/node': 2.9.0
-  edge-fyi: 0.0.2_hodsoaml5wqtwogj6epnckpzhe
+  edge-fyi: 0.0.3_hodsoaml5wqtwogj6epnckpzhe
   typescript: 4.9.5
 
 devDependencies:
   '@grikomsn/style-guide-core': 1.0.0_ixt4l6ptf47gmhhuxcve5dmsda
-  '@types/node': 18.11.18
+  '@types/node': 18.11.19
   eslint: 8.33.0
   husky: 8.0.3
   lint-staged: 13.1.0
@@ -489,8 +489,8 @@ packages:
     resolution: {integrity: sha512-qelS/Ra6sacc4loe/3MSjXNL1dNQ/GjxNHVzuChwMfmk7HuycRLVQN2qNY3XahK+fZc5E2szqQSKUyAF0E+2bg==}
     dev: false
 
-  /@types/node/18.11.18:
-    resolution: {integrity: sha512-DHQpWGjyQKSHj3ebjFI/wRKcqQcdR+MoFBygntYOZytCqNfkd2ZC4ARDJ2DQqhjH5p85Nnd3jhUJIXrszFX/JA==}
+  /@types/node/18.11.19:
+    resolution: {integrity: sha512-YUgMWAQBWLObABqrvx8qKO1enAvBUdjZOAWQ5grBAkp5LQv45jBvYKZ3oFS9iKRCQyFjqw6iuEa1vmFqtxYLZw==}
     dev: true
 
   /@types/normalize-package-data/2.4.1:
@@ -1039,11 +1039,14 @@ packages:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
     dev: true
 
-  /edge-fyi/0.0.2_hodsoaml5wqtwogj6epnckpzhe:
-    resolution: {integrity: sha512-mE5hjxKGV/TXO9fVb701d3mOFK60JVox/tIOQg5FrhmbMneQcK98gn0TURRV4rc+AxJ4MdO0yCxF6YtsoRA9Cw==}
+  /edge-fyi/0.0.3_hodsoaml5wqtwogj6epnckpzhe:
+    resolution: {integrity: sha512-iWrbcYMUDCajRgVMGmocjsXqn5J4roiwfHVb6PvCxwRF9yl4Jc5mLV/FHpYa5uWCqDaSj61F6/PI5/P9cEQCrA==}
     peerDependencies:
       '@vercel/edge-config': '>=0'
       '@vercel/node': '>=2'
+    peerDependenciesMeta:
+      '@vercel/node':
+        optional: true
     dependencies:
       '@vercel/edge-config': 0.1.1
       '@vercel/node': 2.9.0
