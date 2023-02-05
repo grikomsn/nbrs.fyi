@@ -10,9 +10,12 @@ const handler: VercelApiHandler = async (req, res) => {
     return;
   }
   const links = await getAll<Dict>();
-  const content = renderHtml(links);
-
   res.setHeader("Cache-Control", "s-maxage=1, stale-while-revalidate");
+  if (req.query.type === "json") {
+    res.json(links);
+    return;
+  }
+  const content = renderHtml(links);
   res.send(content);
 };
 
