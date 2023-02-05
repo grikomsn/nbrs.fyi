@@ -1,5 +1,5 @@
 {
-  "extends": "@grikomsn/style-guide-core/tsconfig",
+  "extends": "@grikomsn/style-guide-core",
   "exclude": ["node_modules"],
   "include": ["*.d.ts", "api/**/*.ts"]
 }
