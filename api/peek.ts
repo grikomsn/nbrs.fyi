@@ -13,19 +13,12 @@ const handler = async (req: Request): Promise<Response> => {
     return new Response("Unauthorized", { status: 401 });
   }
   const links = await getAll<Dict>();
-  if (url.searchParams.get("type") === "json" || req.headers.get("accept")?.includes("json")) {
-    return new Response(JSON.stringify(links, null, 2), {
-      headers: {
-        "Cache-Control": "s-maxage=1, stale-while-revalidate",
-        "Content-Type": "application/json",
-      },
-    });
-  }
-  const content = renderHtml(links);
+  const isHtml = req.headers.get("accept")?.includes("text/html");
+  const content = isHtml ? renderHtml(links) : JSON.stringify(links, null, 2);
   return new Response(content, {
     headers: {
       "Cache-Control": "s-maxage=1, stale-while-revalidate",
-      "Content-Type": "text/html",
+      "Content-Type": isHtml ? "text/html" : "application/json",
     },
   });
 };
