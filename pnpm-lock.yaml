@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@grikomsn/style-guide-core': ^1.0.0
+  '@grikomsn/style-guide-core': ^1.1.0
   '@types/node': ^18.11.19
   '@vercel/edge-config': ^0.1.1
   '@vercel/node': ^2.9.0
@@ -20,7 +20,7 @@ dependencies:
   typescript: 4.9.5
 
 devDependencies:
-  '@grikomsn/style-guide-core': 1.0.0_ixt4l6ptf47gmhhuxcve5dmsda
+  '@grikomsn/style-guide-core': 1.1.0_ixt4l6ptf47gmhhuxcve5dmsda
   '@types/node': 18.11.19
   eslint: 8.33.0
   husky: 8.0.3
@@ -294,8 +294,8 @@ packages:
       - supports-color
     dev: true
 
-  /@grikomsn/style-guide-core/1.0.0_ixt4l6ptf47gmhhuxcve5dmsda:
-    resolution: {integrity: sha512-U7pd8l2kq91wbGlYRexziORNhkrHDwaDn54cbmNz5OFg/pb9tYWvGXetPUpD9ec4XvR4na5v87jdrff5LA22pg==}
+  /@grikomsn/style-guide-core/1.1.0_ixt4l6ptf47gmhhuxcve5dmsda:
+    resolution: {integrity: sha512-qdHsA+CYUvY2q/D2rF0dvgBvhz7ieiop/1g9Cfed4h5IVpMtP1xbtFKqf8PUavgnnZ/8quxby/OJJY/UIR8o/A==}
     peerDependencies:
       eslint: '>=8'
       prettier: '>=2'
